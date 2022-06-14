@@ -113,7 +113,6 @@ const Form = (props) => {
           <div className="single-input">
             <label>Email</label>
             <input
-              placeholder="email"
               type="email"
               name="email"
               id="email"
@@ -126,7 +125,6 @@ const Form = (props) => {
             <div>
               <label>First Name</label>
               <input
-                placeholder="First name"
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -138,7 +136,6 @@ const Form = (props) => {
             <div>
               <label>Last Name</label>
               <input
-                placeholder="Last name"
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -152,7 +149,6 @@ const Form = (props) => {
             <div>
               <label>Phone number</label>
               <input
-                placeholder="Phone Number"
                 type="number"
                 name="phone-number"
                 id="phone-number"
@@ -164,7 +160,6 @@ const Form = (props) => {
             <div>
               <label>Address</label>
               <input
-                placeholder="Address"
                 type="text"
                 name="address"
                 id="address"
