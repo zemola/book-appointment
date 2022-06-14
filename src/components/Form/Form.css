@@ -1,0 +1,66 @@
+.form{
+    width: 100%;
+}
+
+.logo-div-form{
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-weight: 600;
+    display: block;
+}
+
+.double-input{
+    display: flex;
+    width: 100%;
+   
+}
+
+.double-input div {
+    width: 48%;
+    margin:0.2rem 1rem;
+}
+
+input, select {
+    width: 100%;
+    border: 1px #CCCCCC solid;
+    border-radius: 5px;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.single-input{
+    margin:0.2rem 1rem;
+}
+
+.book {
+    background-color: #00BFA6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem 2rem;
+    font-size: large;
+}
+
+.close{
+    float: right;
+    color: red;
+    background-color: white;
+    border: none;
+    padding: 0.4rem;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+small {
+    color: red;
+    text-align: center;
+    padding-left: 1rem;
+}

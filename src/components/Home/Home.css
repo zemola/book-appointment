@@ -72,10 +72,11 @@ li {
 .action {
     background-color: #00bfa6;
     border:none;
-    width: 10rem;
-    padding: 0.7rem 0;
+    width: 12rem;
+    padding: 0.7rem 0.2rem;
     color: white;
     border-radius: 20px;
+    font-size: large;
 }
 
 /********************************** DETAILS ********************************/
@@ -83,4 +84,94 @@ li {
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    justify-content: space-between;
+    background-color: #F2F8FF;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.card {
+    width: 43%;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+/*******************************************Learn about us *************/
+.learn {
+    background-color: white;
+    border: #00bfa6 1px solid;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    color: #00bfa6;
+    font-size: larger;
+}
+
+.about {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.about img{
+    width: 70%;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/********************************* FOOTER **************************************/
+.footer{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #00BFA6;
+    color: white;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.footer img{
+    height: 100px;
+    width: 100px;
+}
+
+.footer p{
+    margin-top: 1.5rem;
+}
+
+.feed{
+    display: flex;
+}
+
+figure {
+    display: flex;
+    width: 30%;
+}
+
+figcaption{
+ margin-top: 1.5rem;   
+}
+
