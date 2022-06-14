@@ -126,7 +126,7 @@ const Home = (props) => {
           <div className="feed">
             <figure>
               <img src={Avatar} alt="" />
-              <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+              <figcaption>Chinonso Andrew</figcaption>
             </figure>
             <p style={{ textAlign: "left", width: "40%" }}>
               "In publishing and graphic design, Lorem ipsum is a placeholder
