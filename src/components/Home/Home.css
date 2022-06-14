@@ -1,0 +1,86 @@
+body {
+    margin:0;
+    padding:0
+}
+
+.container {
+    width: 100%;
+}
+
+header{
+   width: 95%;
+   margin: 0 auto;
+   padding: 1rem;
+   box-sizing: border-box;
+   display:flex;
+   justify-content: space-between;
+}
+
+header h3 {
+    margin: 5px;
+}
+
+.logo-div {
+    display: flex;
+    width: 50%;
+}
+
+.logo {
+    height:50px;
+    width:50px;
+}
+
+ul{
+    width: 20%;
+    justify-content: space-between;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+/******************************* BANNER DIV *************************************************************/
+.banner-div{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    height: 30rem;
+}
+
+.banner-desc, .banner-img {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.banner-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+.action {
+    background-color: #00bfa6;
+    border:none;
+    width: 10rem;
+    padding: 0.7rem 0;
+    color: white;
+    border-radius: 20px;
+}
+
+/********************************** DETAILS ********************************/
+.service {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
