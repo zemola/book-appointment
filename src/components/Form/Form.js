@@ -59,6 +59,9 @@ const Form = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
     setError("");
+    const dep = reason.split("(");
+    const dept = dep[1].split(")")
+    const department = dept[0]
     if (
       email === "" ||
       firstname === "" ||
@@ -81,9 +84,10 @@ const Form = (props) => {
       firstname: firstname,
       lastname: lastname,
       phone: +phone,
-      reason: reason,
+      reason: department,
       gender: gender,
       address: `${address} ${lga} ${state}`,
+      source:"website"
     };
 
     fetch(url, {
@@ -184,20 +188,20 @@ const Form = (props) => {
               <select value={reason} onChange={handleReasonChange}>
                 <option>Select</option>
                 <option>
-                  General Sickness (malaria,typhoid, cough, e.t.c)
+                  General Sickness (General Physician)
                 </option>
-                <option>Teens and children sickness</option>
-                <option>Cancer problems</option>
-                <option>Skin diseases</option>
-                <option>Brain and nervous system</option>
-                <option>Heart and cadiovascular problems</option>
-                <option>Female reproductive organ problems</option>
-                <option>Surgery</option>
-                <option>Mind/Mental problems</option>
-                <option>Older adult sickness</option>
-                <option>Respiratory problems</option>
-                <option>Eye problems</option>
-                <option>Bone and muscle problems</option>
+                <option>Teens and children sickness(Pediatrics)</option>
+                <option>Cancer problems(Surgeon)</option>
+                <option>Skin diseases(Dermatology)</option>
+                <option>Brain and nervous system(Pschiatry)</option>
+                <option>Heart and cadiovascular problems(Cardiology)</option>
+                <option>Female reproductive organ problems(Gynac Consultant)</option>
+                <option>Surgery(Surgeon)</option>
+                <option>Mind/Mental problems(Pschiatry)</option>
+                <option>Older adult sickness(Pediatrics)</option>
+                <option>Respiratory problems(Pulmonology)</option>
+                <option>Eye problems(Optamologist)</option>
+                <option>Bone and muscle problems(Dentistry)</option>
               </select>
             </div>
 
