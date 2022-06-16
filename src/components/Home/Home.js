@@ -9,6 +9,7 @@ import Lab from "../../images/lab.png";
 import Firstaid from "../../images/first-aid.png";
 import Nurse from "../../images/nurse.png";
 import Avatar from "../../images/avatar.png";
+import Contact from "../../images/contact.png";
 
 import "./Home.css";
 
@@ -33,21 +34,32 @@ const Home = (props) => {
           </div>
 
           <ul className="nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Nav</li>
+            <li>
+              {" "}
+              <a href="#banner-div"> Home</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#service"> Services</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#about"> About</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer"> Testimonial</a>
+            </li>
           </ul>
         </header>
 
         <div className="banner-div">
           <div className="banner-desc">
-            <h3>Virtual Health care for you</h3>
+            <h1 className="title">Wholistic healthcare <br></br> for you</h1>
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before final copy is available.
+              We provide progressive, and affordable healthcare,available online
+              for everyone. To us, it’s not just work. We take pride -in the
+              timely solutions we deliver.
             </p>
             <button className="action" onClick={showFormHandler}>
               Book appointment
@@ -62,40 +74,36 @@ const Home = (props) => {
         <div className="service">
           <h3>Our services</h3>
           <p>
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before final copy is available.
+            We provide you with choices best suited to your health needs and <br></br>
+            make sure you are well attended to by our highly qualified medical
+            personnels who are always at your service.
           </p>
 
           <div className="card-container">
             <div className="card">
               <img src={Medicine} alt="medicine-jar" />
-              <h4>Online pharmacy</h4>
+              <h4>Pharmacy</h4>
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the
+              Our pharmacy is stocked regularly, to ease purchase of your prescribed medications.
               </p>
             </div>
             <div className="card">
               <img src={Lab} alt="medicine-jar" />
               <h4>Consultation</h4>
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the
-              </p>
+              Book an appointment in minutes and be assigned to qualified doctors for consultation and diagnosis.
+              </p> 
             </div>
             <div className="card">
               <img src={Firstaid} alt="medicine-jar" />
               <h4>Emergency care</h4>
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the
+              With our shift system, we are available 24/7 to cater to your health needs. 
               </p>
             </div>
             <div className="card">
-              <img src={Medicine} alt="medicine-jar" />
-              <h4>Online pharmacy</h4>
+              <img src={Contact} alt="contact" />
+              <h4>Lab Test</h4>
               <p>
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate the
@@ -112,8 +120,7 @@ const Home = (props) => {
           <div className="about-us">
             <h4>Leading health care Providers</h4>
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the
+            With our shift system, we are available 24/7 to cater to your health needs.
             </p>
             <p>
               <button className="learn">Learn more</button>
