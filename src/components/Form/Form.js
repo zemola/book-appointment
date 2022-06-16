@@ -60,8 +60,8 @@ const Form = (props) => {
     e.preventDefault();
     setError("");
     const dep = reason.split("(");
-    const dept = dep[1].split(")")
-    const department = dept[0]
+    const dept = dep[1].split(")");
+    const department = dept[0];
     if (
       email === "" ||
       firstname === "" ||
@@ -87,7 +87,7 @@ const Form = (props) => {
       reason: department,
       gender: gender,
       address: `${address} ${lga} ${state}`,
-      source:"website"
+      source: "website",
     };
 
     fetch(url, {
@@ -187,15 +187,15 @@ const Form = (props) => {
               <label>Select Reason</label>
               <select value={reason} onChange={handleReasonChange}>
                 <option>Select</option>
-                <option>
-                  General Sickness (General Physician)
-                </option>
+                <option>General Sickness (General Physician)</option>
                 <option>Teens and children sickness(Pediatrics)</option>
                 <option>Cancer problems(Surgeon)</option>
                 <option>Skin diseases(Dermatology)</option>
                 <option>Brain and nervous system(Pschiatry)</option>
                 <option>Heart and cadiovascular problems(Cardiology)</option>
-                <option>Female reproductive organ problems(Gynac Consultant)</option>
+                <option>
+                  Female reproductive organ problems(Gynac Consultant)
+                </option>
                 <option>Surgery(Surgeon)</option>
                 <option>Mind/Mental problems(Pschiatry)</option>
                 <option>Older adult sickness(Pediatrics)</option>
@@ -231,7 +231,7 @@ const Form = (props) => {
       )}
       {sucess && (
         <div style={{ textAlign: "center" }}>
-          <img src={Success} height="40%" width="40%" alt="" />
+          <img src={Success} height="30%" width="30%" alt="" />
           <p>
             Your booking was successful. Check your email form more information
           </p>
