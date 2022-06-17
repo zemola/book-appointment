@@ -184,7 +184,7 @@ const Home = (props) => {
                 text commonly used to demonstrate the
               </p>
             </div>
-            <div style={{ width: "100%", textAlign: "center" }}>
+            <div className="mt-10" style={{ width: "100%", textAlign: "center" }}>
               <button className="learn">Learn more</button>
             </div>
           </div>
@@ -198,7 +198,7 @@ const Home = (props) => {
               With our shift system, we are available 24/7 to cater to your
               health needs.
             </p>
-            <p>
+            <p className="mt-10">
               <button className="learn">Learn more</button>
             </p>
           </div>
