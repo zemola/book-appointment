@@ -1,6 +1,5 @@
 {
-  "homepage": "http://esnonso.github.io/hospital",
-  "name": "hospital-project",
+  "name": "book-appointment",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
