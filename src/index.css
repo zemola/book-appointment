@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 body {
   margin: 0;
   font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Mulish', sans-serif;
+  font-size: large;
 }
 
 code {
@@ -17,5 +13,13 @@ code {
 }
 
 button:hover{
+  cursor: pointer;
+}
+
+li {
+  color:gray
+}
+
+li:hover {
   cursor: pointer;
 }

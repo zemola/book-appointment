@@ -1,8 +1,13 @@
+import { Fragment } from "react";
 import Home from "./components/Home/Home";
+import Nav from "./components/Layout/Nav";
 
 function App() {
   return(
-    <Home />
+    <Fragment>
+      <Nav />
+      <Home />
+    </Fragment>
   )
 }
 

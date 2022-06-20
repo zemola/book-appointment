@@ -105,7 +105,7 @@ const Form = (props) => {
       <div className="header">
         <div className="logo-div-form">
           <img src={Logo} className="logo" alt="" />
-          <h3>Blossom Heart Hospital</h3>
+          <h3>Book an appointment</h3>
         </div>
         <button className="close" onClick={props.onClose}>
           X
