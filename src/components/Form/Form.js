@@ -256,17 +256,6 @@ const Form = (props) => {
         </div>
       )}
 
-<small style={{ textAlign: "left", marginLeft:"0.5rem"}}>
-              <b>Adebola Bolanle</b> "In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the In publishing and graphic
-              design, Lorem ipsum is a placeholder text commonly used to
-              demonstrate the"
-
-              <b>Adebola Bolanle</b> "In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the In publishing and graphic
-              design, Lorem ipsum is a placeholder text commonly used to
-              demonstrate the"
-            </small>
     </div>
   );
 };
