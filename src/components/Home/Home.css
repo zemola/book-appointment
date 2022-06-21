@@ -140,7 +140,7 @@
 /******************************* MEDIA QUERIES **********************/
 @media (max-width: 820px) {
 .banner-div {
-    margin-top: 35vh;
+    margin-top: 20rem;
     display: flex;
     flex-direction: column-reverse;
 }

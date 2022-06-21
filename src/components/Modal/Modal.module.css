@@ -21,7 +21,6 @@
   z-index: 30;
   box-sizing: border-box;
   animation: slide-down 300ms ease-out forwards;
-  overflow: scroll;
 }
 
 @media (max-width: 768px) {
