@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Select } from "react-select-states-and-lga-in-nigeria";
 import "react-select-states-and-lga-in-nigeria/dist/index.css";
 
-import Logo from "../../images/blossom heart.png";
 import Success from "../../images/success.png";
 import "./Form.css";
 
@@ -14,6 +13,7 @@ const Form = (props) => {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [state, setState] = useState("");
+  const [dob, setDob] = useState("");
   const [lga, setLga] = useState("");
   const [gender, setGender] = useState("");
   const [reason, setReason] = useState("");
@@ -22,6 +22,10 @@ const Form = (props) => {
 
   const emailChangeHandler = (e) => {
     setEmail(e.target.value);
+  };
+
+  const dobChangeHandler = (e) => {
+    setDob(e.target.value);
   };
 
   const firstnameChangeHandler = (e) => {
@@ -103,17 +107,19 @@ const Form = (props) => {
   return (
     <div className="form">
       <div className="header">
-        <div className="logo-div-form">
-          <img src={Logo} className="logo" alt="" />
-          <h3>Book an appointment</h3>
-        </div>
-        <button className="close" onClick={props.onClose}>
+       
+       <div className="close-div">
+       <button className="close" onClick={props.onClose}>
           X
         </button>
+       </div>
       </div>
       {!sucess && (
         <form onSubmit={submitHandler}>
-          {error && <small>Please fill all inputs</small>}
+           <div className="logo-div-form">
+              <h3>Book an appointment</h3>
+            </div>
+          {error && <small class="small">Please fill all inputs</small>}
           <div className="single-input">
             <label>Email</label>
             <input
@@ -171,6 +177,17 @@ const Form = (props) => {
                 onChange={addressChangeHandler}
               />
             </div>
+          </div>
+
+          <div className="single-input">
+            <label>Date of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              value={dob}
+              onChange={dobChangeHandler}
+            />
           </div>
 
           <div className="single-input">

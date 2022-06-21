@@ -32,8 +32,6 @@ input, select {
     width: 100%;
     border: 1px #CCCCCC solid;
     border-radius: 5px;
-    padding: 0.2rem;
-    box-sizing: border-box;
 }
 
 .single-input{
@@ -49,8 +47,12 @@ input, select {
     font-size: large;
 }
 
+.close-div{
+    width: 100%;
+    text-align: right;
+}
+
 .close{
-    float: right;
     color: red;
     background-color: white;
     border: none;
@@ -59,8 +61,18 @@ input, select {
     font-weight: 600;
 }
 
-small {
+.small {
     color: red;
     text-align: center;
     padding-left: 1rem;
+}
+
+@media (max-width: 768px){
+    .double-input {
+        flex-direction: column;
+    }
+
+    .double-input div{
+        width: 90%;
+    }
 }

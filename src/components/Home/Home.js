@@ -7,8 +7,8 @@ import Medicine from "../../images/medicine.png";
 import Lab from "../../images/lab.png";
 import Firstaid from "../../images/first-aid.png";
 import Nurse from "../../images/nurse.png";
-import Avatar from "../../images/avatar.png";
 import Contact from "../../images/contact.png";
+import Bola from '../../images/bola.png'
 
 import "./Home.css";
 
@@ -116,16 +116,14 @@ const Home = (props) => {
         <div className="footer">
           <h2>What our customers are saying</h2>
           <div className="feed">
-            <figure>
-              <img src={Avatar} alt="" />
-              <figcaption>Chinonso Andrew</figcaption>
-            </figure>
-            <p style={{ textAlign: "left" }}>
-              "In publishing and graphic design, Lorem ipsum is a placeholder
+              <img src={Bola} alt="" />
+           
+            <small style={{ textAlign: "left", marginLeft:"0.5rem"}}>
+              <b>Adebola Bolanle</b> "In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the In publishing and graphic
               design, Lorem ipsum is a placeholder text commonly used to
               demonstrate the"
-            </p>
+            </small>
           </div>
         </div>
       </div>
