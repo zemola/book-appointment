@@ -243,7 +243,7 @@ const Form = (props) => {
         <div style={{ textAlign: "center" }}>
           <img src={Success} height="30%" width="30%" alt="" />
           <p>
-            Your booking was successful. Check your email form more information
+            Your booking was successful. Check your email for more information
           </p>
         </div>
       )}
