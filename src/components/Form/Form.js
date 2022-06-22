@@ -205,8 +205,8 @@ const Form = (props) => {
               <label>Select Reason</label>
               <select value={reason} onChange={handleReasonChange}>
                 <option>Select</option>
-                <option>General Sickness (General Physician)</option>
-                <option>Teens and children sickness(Prediatrics)</option>
+                <option>General Symptoms (General Physician)</option>
+                <option>Teens and children sickness(Pediatrics)</option>
                 <option>
                   Female reproductive organ problems(Gynecologist)
                 </option>
