@@ -8,7 +8,6 @@ import Lab from "../../images/lab.png";
 import Firstaid from "../../images/first-aid.png";
 import Nurse from "../../images/nurse.png";
 import Contact from "../../images/contact.png";
-import Bola from '../../images/bola.png'
 
 import "./Home.css";
 
@@ -37,10 +36,7 @@ const Home = (props) => {
               for everyone. To us, it’s not just work. We take pride -in the
               timely solutions we deliver.
             </p>
-            <button
-              className="action"
-              onClick={showFormHandler}
-            >
+            <button className="action" onClick={showFormHandler}>
               Book appointment
             </button>
           </div>
@@ -51,9 +47,7 @@ const Home = (props) => {
         </div>
 
         <div className="service ">
-          <h2 >
-            Our services
-          </h2>
+          <h2>Our services</h2>
           <p className="service-p">
             We provide you with choices best suited to your health needs and{" "}
             make sure you are well attended to by our highly qualified medical
@@ -93,7 +87,10 @@ const Home = (props) => {
                 text commonly used to demonstrate the
               </p>
             </div>
-            <div className="mt-10" style={{ width: "100%", textAlign: "center" }}>
+            <div
+              className="mt-10"
+              style={{ width: "100%", textAlign: "center" }}
+            >
               <button className="learn">Learn more</button>
             </div>
           </div>
@@ -114,16 +111,36 @@ const Home = (props) => {
         </div>
 
         <div className="footer">
-          <h2>What our customers are saying</h2>
-          <div className="feed">
-              <img src={Bola} alt="" />
-           
-            <small style={{ textAlign: "left", marginLeft:"0.5rem"}}>
-              <b>Adebola Bolanle</b> "In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the In publishing and graphic
-              design, Lorem ipsum is a placeholder text commonly used to
-              demonstrate the"
-            </small>
+          <div className="company-name">
+            <h4>Blossom Heart Hospital</h4>
+            <p>
+              Blossom Heart provides progressive, and affordable hearthcare,
+              accessible on mobile and online for everyone{" "}
+            </p>
+          </div>
+          <div className="footer-item">
+            <h4>Company</h4>
+            <ul>
+              <li>About</li>
+              <li>Testimonials </li>
+              <li>services</li>
+              <li>Home</li>
+            </ul>
+          </div>
+          <div className="footer-item">
+            <h4>Region</h4>
+            <ul>
+              <li>Nigeria</li>
+            </ul>
+          </div>
+          <div className="footer-item">
+            <h4>Help</h4>
+            <ul>
+              <li>Help center</li>
+              <li>Contact support </li>
+              <li>Instructions</li>
+              <li>How it works</li>
+            </ul>
           </div>
         </div>
       </div>

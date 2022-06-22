@@ -59,8 +59,9 @@
      margin:0;
  }
  
- li {
+ .nav-items li {
      list-style-type: none;
+     color:gray;
  }
 
 

@@ -17,9 +17,6 @@ button:hover{
   cursor: pointer;
 }
 
-li {
-  color:gray
-}
 
 li:hover {
   cursor: pointer;
