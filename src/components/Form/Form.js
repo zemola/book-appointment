@@ -62,7 +62,7 @@ const Form = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    setError("");
+    //setError("");
     const dep = reason.split("(");
     const dept = dep[1].split(")");
     const department = dept[0];
@@ -206,20 +206,12 @@ const Form = (props) => {
               <select value={reason} onChange={handleReasonChange}>
                 <option>Select</option>
                 <option>General Sickness (General Physician)</option>
-                <option>Teens and children sickness(Pediatrics)</option>
-                <option>Cancer problems(Surgeon)</option>
-                <option>Skin diseases(Dermatology)</option>
-                <option>Brain and nervous system(Pschiatry)</option>
-                <option>Heart and cadiovascular problems(Cardiology)</option>
+                <option>Teens and children sickness(Prediatrics)</option>
                 <option>
-                  Female reproductive organ problems(Gynac Consultant)
+                  Female reproductive organ problems(Gynecologist)
                 </option>
-                <option>Surgery(Surgeon)</option>
-                <option>Mind/Mental problems(Pschiatry)</option>
-                <option>Older adult sickness(Pediatrics)</option>
-                <option>Respiratory problems(Pulmonology)</option>
-                <option>Eye problems(Optamologist)</option>
-                <option>Bone and muscle problems(Dentistry)</option>
+                <option>Tooth problems(Dentist)</option>
+                <option>Bone problems(Orthopaedics)</option>
               </select>
             </div>
 
