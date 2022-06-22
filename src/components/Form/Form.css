@@ -49,10 +49,14 @@ label{
 }
 
 input, select {
-    width: 100%;
+    width: 97%;
     padding: 0.2rem;
     border: 1px #CCCCCC solid;
     border-radius: 5px;
+}
+
+select {
+    width: 100%;
 }
 
 .single-input{
@@ -87,6 +91,7 @@ input, select {
     text-align: center;
     padding-left: 1rem;
 }
+
 
 @media (max-width: 768px){
     .double-input {

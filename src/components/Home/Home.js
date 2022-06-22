@@ -72,7 +72,7 @@ const Home = (props) => {
               </p>
             </div>
             <div className="card ">
-              <img src={Firstaid} alt="medicine-jar" />
+              <img className="emergency-img" src={Firstaid} alt="medicine-jar" />
               <h4>Emergency care</h4>
               <p>
                 With our shift system, we are available 24/7 to cater to your
@@ -83,12 +83,10 @@ const Home = (props) => {
               <img src={Contact} alt="contact" />
               <h4>Lab Test</h4>
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the
+                Fully-equipped laboratory and qualified lab technicians at your service.
               </p>
             </div>
             <div
-              className="mt-10"
               style={{ width: "100%", textAlign: "center" }}
             >
               <button className="learn">Learn more</button>
