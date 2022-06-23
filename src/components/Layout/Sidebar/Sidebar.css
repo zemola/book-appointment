@@ -24,6 +24,7 @@
   .sidebar li {
     border-bottom: 1px black solid;
     padding: 1rem;
+    list-style-type: none;
   }
 
   @media (max-width: 820px) {
