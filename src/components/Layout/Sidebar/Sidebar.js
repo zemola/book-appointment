@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import ReactDOM from "react-dom";
-import { navItems } from "../NavItems/navItems";
+// import { navItems } from "../NavItems/navItems";
 import  "./Sidebar.css";
 
 const Backdrop = (props) => {
@@ -9,9 +9,9 @@ const Backdrop = (props) => {
 
   const SidebarOverlay = (props) => {
     return <div className="sidebar">
-        <ul>
+        {/* <ul>
             {navItems.map((item, index) => <li key={index}>{item}</li>)}
-        </ul>
+        </ul> */}
     </div>;
   };
 

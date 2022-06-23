@@ -1,6 +1,4 @@
 import { Fragment, useState } from "react";
-
-import { navItems } from "./NavItems/navItems";
 import Sidebar from "./Sidebar/Sidebar";
 
 import Logo from "../../images/blossom heart.png";
@@ -24,12 +22,14 @@ const Nav = (props) => {
             <h3>Blossom Heart Hospital</h3>
           </div>
       </div>
-
+      <navItems />
+      
+{/* 
       <ul className="nav-items">
         {navItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
-      </ul>
+      </ul> */}
     </div>
 
     {sidebar && <Sidebar onClose={hideSidebarHandler}/>}

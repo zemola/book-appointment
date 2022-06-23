@@ -25,7 +25,7 @@ const Home = (props) => {
   return (
     <Fragment>
       <div className="container">
-        <div className="banner-div">
+        <div className=" Home banner-div">
           <div className="banner-desc">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Holistic healthcare</span>{" "}
@@ -46,7 +46,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="service ">
+        <div className="service" id="service">
           <h2>Our services</h2>
           <p className="service-p">
             We provide you with choices best suited to your health needs and{" "}
@@ -94,7 +94,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="about">
+        <div className="about" id="About">
           <img src={Nurse} alt="nurses" />
           <div className="about-us">
             <h4>Leading health care Providers</h4>
@@ -108,7 +108,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="footer">
+        <div className="footer" id="Contact">
           <div className="company-name">
             <h4>Blossom Heart Hospital</h4>
             <p>
