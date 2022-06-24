@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 import { navItems } from "./NavItems/navItems";
 import Sidebar from "./Sidebar/Sidebar";
@@ -15,25 +16,33 @@ const Nav = (props) => {
   const hideSidebarHandler = () => showSidebar(false);
 
   return (
- <Fragment>
-     <div className="nav">  
+    <Fragment>
+      <div className="nav">
         <div className="logo-div">
-        <button className="hamburger" onClick={showSidebarHandler}><span></span><span></span><span></span></button>
+          <button className="hamburger" onClick={showSidebarHandler}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <img src={Logo} className="logo" alt="" />
           <div className="logo-text">
             <h3>Blossom Heart Hospital</h3>
           </div>
+        </div>
+
+        <ul className="nav-items">
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link to={`#${item}`} smooth>
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      <ul className="nav-items">
-        {navItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-
-    {sidebar && <Sidebar onClose={hideSidebarHandler}/>}
- </Fragment>
+      {sidebar && <Sidebar onClose={hideSidebarHandler} />}
+    </Fragment>
   );
 };
 

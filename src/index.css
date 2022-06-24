@@ -17,7 +17,12 @@ button:hover{
   cursor: pointer;
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
 
-li:hover {
+a:hover {
   cursor: pointer;
+  color: #00BFA6;
 }

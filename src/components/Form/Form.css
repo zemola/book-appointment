@@ -12,6 +12,17 @@
 
 }
 
+form h3 {
+    text-align: center;
+    margin: 0;
+}
+
+form p {
+    text-align: center;
+    margin: 0;
+    font-size: smaller;
+}
+
 .logo-div-form{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -92,6 +103,29 @@ select {
     padding-left: 1rem;
 }
 
+.success {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book:disabled,
+.book[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+}
+
+.error input {
+    border:  1px red solid;
+}
 
 @media (max-width: 768px){
     .double-input {

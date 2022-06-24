@@ -25,7 +25,7 @@ const Home = (props) => {
   return (
     <Fragment>
       <div className="container">
-        <div className="banner-div">
+        <div className="banner-div" id="Home">
           <div className="banner-desc">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Holistic healthcare</span>{" "}
@@ -46,13 +46,19 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="service ">
+        <div className="service " id="Services">
           <h2>Our services</h2>
           <p className="service-p">
             We provide you with choices best suited to your health needs and{" "}
             make sure you are well attended to by our highly qualified medical
             personnels who are always at your service.
           </p>
+
+          <div className="floated">
+            <button className="book-appoint action" onClick={showFormHandler}>
+              Book an appointment
+            </button>
+          </div>
 
           <div className="card-container">
             <div className="card">
@@ -72,7 +78,11 @@ const Home = (props) => {
               </p>
             </div>
             <div className="card ">
-              <img className="emergency-img" src={Firstaid} alt="medicine-jar" />
+              <img
+                className="emergency-img"
+                src={Firstaid}
+                alt="medicine-jar"
+              />
               <h4>Emergency care</h4>
               <p>
                 With our shift system, we are available 24/7 to cater to your
@@ -83,18 +93,17 @@ const Home = (props) => {
               <img src={Contact} alt="contact" />
               <h4>Lab Test</h4>
               <p>
-                Fully-equipped laboratory and qualified lab technicians at your service.
+                Fully-equipped laboratory and qualified lab technicians at your
+                service.
               </p>
             </div>
-            <div
-              style={{ width: "100%", textAlign: "center" }}
-            >
+            <div style={{ width: "100%", textAlign: "center" }}>
               <button className="learn">Learn more</button>
             </div>
           </div>
         </div>
 
-        <div className="about">
+        <div className="about" id="About">
           <img src={Nurse} alt="nurses" />
           <div className="about-us">
             <h4>Leading health care Providers</h4>
@@ -108,13 +117,15 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="footer">
+        <div className="footer" id="footer">
           <div className="company-name">
             <h4>Blossom Heart Hospital</h4>
             <p>
               Blossom Heart provides progressive, and affordable hearthcare,
               accessible on mobile and online for everyone{" "}
             </p>
+            <p>Phone: 09087654312</p>
+            <p>blossomheart@gmail.com</p>
           </div>
           <div className="footer-item">
             <h4>Company</h4>
@@ -141,6 +152,9 @@ const Home = (props) => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="copywright">
+        <p>&copy; Blossom Heart Hospital</p>
       </div>
 
       {form && (

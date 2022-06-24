@@ -4,7 +4,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 2rem;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -19,13 +19,7 @@
  }
 
  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 0.5rem;
-    height: fit-content;
-    background-color: white;
-    border: none;
+    display: none;
  }
 
  .hamburger span {
@@ -72,5 +66,15 @@
 
     .logo-div {
         width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0.5rem;
+        height: fit-content;
+        background-color: white;
+        border: none;
     }
  }

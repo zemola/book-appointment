@@ -46,6 +46,7 @@
     color: white;
     border-radius: 20px;
     font-size: large;
+    border: 1px white solid;
 }
 
 /********************************** DETAILS ********************************/
@@ -54,6 +55,7 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .service-p {
@@ -106,6 +108,7 @@
     margin: 0 auto;
     margin-bottom: 2rem;
     display: flex;
+    margin-top: 60px;
 }
 
 .about img{
@@ -138,7 +141,7 @@
 
 .company-name{
     width: 30%;
-    height: 15rem;
+    height: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -148,10 +151,11 @@
 .company-name p {
     font-size: small;
     text-align: left;
+    margin: 0.2rem;
 }
 
 .footer-item{
-    height: 15rem;
+    height: 7rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -172,6 +176,24 @@
     display: flex;
 }
 
+.floated {
+    position: fixed;
+    top: 85vh;
+    left: 80vw;
+    animation: bump 5s infinite ease-out;
+}
+
+.copywright{
+    background-color: #00BFA6;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.copywright p {
+    margin: 0;
+    font-size: smaller;
+}
 
 /******************************* MEDIA QUERIES **********************/
 @media (max-width: 820px) {
@@ -233,6 +255,11 @@ figure{
     height:fit-content;
 }
 
+.floated {
+    top: 90vh;
+    left: 50vw;
+}
+
 }
 
 
@@ -245,5 +272,29 @@ figure{
 @media only screen and (min-width: 768px) {
     .card {
         width: 40%;
+    }
+}
+
+
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

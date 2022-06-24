@@ -18,8 +18,9 @@ const Form = (props) => {
   const [gender, setGender] = useState("");
   const [reason, setReason] = useState("");
   const [sucess, showSucess] = useState(false);
-  const [error, setError] = useState("");
+  const [un18, showUn18] = useState(false);
 
+  //input changeHandlers
   const emailChangeHandler = (e) => {
     setEmail(e.target.value);
   };
@@ -60,26 +61,28 @@ const Form = (props) => {
     setReason(e.target.value);
   };
 
+  const formIsIncomplete =
+    email === "" ||
+    firstname === "" ||
+    lastname === "" ||
+    phone === "" ||
+    reason === "" ||
+    gender === "" ||
+    dob === "";
+
   const submitHandler = (e) => {
     e.preventDefault();
-    //setError("");
+    const ageDiff = Date.now() - new Date(dob).getTime();
+    const ageDate = new Date(ageDiff);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    if (age < 18) {
+      showUn18(true);
+      return;
+    }
+
     const dep = reason.split("(");
     const dept = dep[1].split(")");
     const department = dept[0];
-    if (
-      email === "" ||
-      firstname === "" ||
-      lastname === "" ||
-      phone === "" ||
-      address === "" ||
-      state === "" ||
-      lga === "" ||
-      reason === "" ||
-      gender === ""
-    ) {
-      setError("select All inputs");
-      return;
-    }
 
     const url =
       "https://prod-60.westeurope.logic.azure.com:443/workflows/b0d994885dc74699b807f1fd36783576/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=lA3ZzpbXx6EphtUrghKki5bs-Tc2bjmuGOE-vNYqS50";
@@ -90,7 +93,7 @@ const Form = (props) => {
       phone: +phone,
       reason: department,
       gender: gender,
-      dateOfBirth:dob,
+      dateOfBirth: dob,
       address: `${address} ${lga} ${state}`,
       source: "website",
     };
@@ -108,21 +111,21 @@ const Form = (props) => {
   return (
     <div className="form">
       <div className="header">
-       
-       <div className="close-div">
-       <button className="close" onClick={props.onClose}>
-          X
-        </button>
-       </div>
+        <div className="close-div">
+          <button className="close" onClick={props.onClose}>
+            X
+          </button>
+        </div>
       </div>
       {!sucess && (
         <form onSubmit={submitHandler}>
-           <div className="logo-div-form">
-              <h3>Book an appointment</h3>
-            </div>
-          {error && <small class="small">Please fill all inputs</small>}
+          <h3>Book an appointment</h3>
+          <p>
+            <small>Fill all inputs marked *</small>
+          </p>
+
           <div className="single-input">
-            <label>Email</label>
+            <label>*Email</label>
             <input
               type="email"
               name="email"
@@ -134,7 +137,7 @@ const Form = (props) => {
 
           <div className="double-input">
             <div>
-              <label>First Name</label>
+              <label>*First Name</label>
               <input
                 type="text"
                 name="first-name"
@@ -145,7 +148,7 @@ const Form = (props) => {
             </div>
 
             <div>
-              <label>Last Name</label>
+              <label>*Last Name</label>
               <input
                 type="text"
                 name="last-name"
@@ -158,7 +161,7 @@ const Form = (props) => {
 
           <div className="double-input">
             <div>
-              <label>Phone number</label>
+              <label>*Phone number</label>
               <input
                 type="number"
                 name="phone-number"
@@ -169,7 +172,7 @@ const Form = (props) => {
             </div>
 
             <div>
-              <label>Address</label>
+              <label>*Address</label>
               <input
                 type="text"
                 name="address"
@@ -181,17 +184,6 @@ const Form = (props) => {
           </div>
 
           <div className="single-input">
-            <label>Date of Birth</label>
-            <input
-              type="date"
-              name="dob"
-              id="dob"
-              value={dob}
-              onChange={dobChangeHandler}
-            />
-          </div>
-
-          <div className="single-input">
             <Select
               state={state}
               lga={lga}
@@ -200,9 +192,23 @@ const Form = (props) => {
             />
           </div>
 
+          <div
+            className={un18 === true ? "single-input error" : "single-input"}
+          >
+            <label>*Date of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              value={dob}
+              onChange={dobChangeHandler}
+            />
+            {un18 && <p>You must be over 18 to book an appointment</p>}
+          </div>
+
           <div className="double-input">
             <div>
-              <label>Select Reason</label>
+              <label>*Select Reason</label>
               <select value={reason} onChange={handleReasonChange}>
                 <option>Select</option>
                 <option>General Symptoms (General Physician)</option>
@@ -216,7 +222,7 @@ const Form = (props) => {
             </div>
 
             <div>
-              <label>Gender</label>
+              <label>*Gender</label>
               <select value={gender} onChange={handleGenderChange}>
                 <option>Select</option>
                 <option>Male</option>
@@ -233,21 +239,20 @@ const Form = (props) => {
               boxSizing: "border-box",
             }}
           >
-            <button type="submit" className="book">
+            <button type="submit" className="book" disabled={formIsIncomplete}>
               Book appointment
             </button>
           </div>
         </form>
       )}
       {sucess && (
-        <div style={{ textAlign: "center" }}>
-          <img src={Success} height="30%" width="30%" alt="" />
+        <div className="success">
+          <img src={Success} height="100rem" width="100rem" alt="" />
           <p>
             Your booking was successful. Check your email for more information
           </p>
         </div>
       )}
-
     </div>
   );
 };
