@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import Form from "../Form/Form";
 import Modal from "../Modal/Modal";
 
+
 import Banner from "../../images/banner.png";
 import Medicine from "../../images/medicine.png";
 import Lab from "../../images/lab.png";
@@ -45,8 +46,9 @@ const Home = (props) => {
             <img src={Banner} className="banner" alt="blossom-banner" />
           </div>
         </div>
+        <div id="Services"></div>
 
-        <div className="service " id="Services">
+        <div className="service ">
           <h2>Our services</h2>
           <p className="service-p">
             We provide you with choices best suited to your health needs and{" "}
@@ -98,12 +100,12 @@ const Home = (props) => {
               </p>
             </div>
             <div style={{ width: "100%", textAlign: "center" }}>
-              <button className="learn">Learn more</button>
+              <button className="learn" id="About">Learn more</button>
             </div>
           </div>
         </div>
 
-        <div className="about" id="About">
+        <div className="about">
           <img src={Nurse} alt="nurses" />
           <div className="about-us">
             <h4>Leading health care Providers</h4>
@@ -112,20 +114,22 @@ const Home = (props) => {
               health needs.
             </p>
             <p className="mt-10">
-              <button className="learn">Learn more</button>
+              <button className="learn" id="Contact">Learn more</button>
             </p>
           </div>
         </div>
 
-        <div className="footer" id="footer">
+        <div className="footer">
           <div className="company-name">
             <h4>Blossom Heart Hospital</h4>
             <p>
               Blossom Heart provides progressive, and affordable hearthcare,
               accessible on mobile and online for everyone{" "}
             </p>
+
+            <h4>Contact</h4>
             <p>Phone: 09087654312</p>
-            <p>blossomheart@gmail.com</p>
+            <p>E-mail: it@blossomheart.onmicrosoft.com</p>
           </div>
           <div className="footer-item">
             <h4>Company</h4>
