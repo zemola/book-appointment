@@ -61,7 +61,7 @@
 
  @media (max-width: 992px) {
 .nav {
-    padding: 0.2rem 1rem;
+    padding: 0 1rem;
 }
 
     .nav-items {
@@ -70,13 +70,14 @@
 
     .logo-div {
         width: 100%;
+        justify-content: left;
     }
 
     .hamburger {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 0.5rem;
+        margin-right: 0.2rem;
         height: fit-content;
         background-color: white;
         border: none;

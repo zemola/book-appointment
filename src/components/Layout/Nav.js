@@ -33,9 +33,11 @@ const Nav = (props) => {
         <ul className="nav-items">
           {navItems.map((item, index) => (
             <li key={index}>
-              <Link to={`#${item}`} smooth>
+             
+            <Link to={`#${item}`} smooth>
                 {item}
               </Link>
+          
             </li>
           ))}
         </ul>
