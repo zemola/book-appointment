@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/book-appointment/static/css/main.335dbbee.css",
-    "main.js": "/book-appointment/static/js/main.fee88077.js",
+    "main.css": "/book-appointment/static/css/main.4c234872.css",
+    "main.js": "/book-appointment/static/js/main.cfd9ebe2.js",
     "static/media/banner.png": "/book-appointment/static/media/banner.1a81ebb293d51117643d.png",
     "static/media/blossom heart.png": "/book-appointment/static/media/blossom heart.3d1ac2c1e797d2889f8b.png",
     "static/media/nurse.png": "/book-appointment/static/media/nurse.7bfad230a4925260aadf.png",
     "index.html": "/book-appointment/index.html",
-    "main.335dbbee.css.map": "/book-appointment/static/css/main.335dbbee.css.map",
-    "main.fee88077.js.map": "/book-appointment/static/js/main.fee88077.js.map"
+    "main.4c234872.css.map": "/book-appointment/static/css/main.4c234872.css.map",
+    "main.cfd9ebe2.js.map": "/book-appointment/static/js/main.cfd9ebe2.js.map"
   },
   "entrypoints": [
-    "static/css/main.335dbbee.css",
-    "static/js/main.fee88077.js"
+    "static/css/main.4c234872.css",
+    "static/js/main.cfd9ebe2.js"
   ]
 }
