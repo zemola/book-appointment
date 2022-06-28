@@ -60,6 +60,10 @@
 
 
  @media (max-width: 992px) {
+.nav {
+    padding: 0.2rem 1rem;
+}
+
     .nav-items {
         display: none;
     }
