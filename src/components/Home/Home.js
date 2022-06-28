@@ -34,7 +34,7 @@ const Home = (props) => {
             </h1>
             <p className="mt-3 text-base text-black-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               We provide progressive, and affordable healthcare,available online
-              for everyone. To us, it’s not just work. We take pride -in the
+              for everyone. To us, it’s not just work. We take pride in the
               timely solutions we deliver.
             </p>
             <button className="action" onClick={showFormHandler}>
