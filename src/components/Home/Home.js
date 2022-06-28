@@ -58,7 +58,7 @@ const Home = (props) => {
 
           <div className="floated">
             <button className="book-appoint action" onClick={showFormHandler}>
-              Book an appointment
+              Book appointment
             </button>
           </div>
 
