@@ -129,7 +129,7 @@ const Home = (props) => {
 
             <h4>Contact</h4>
             <p>Phone: 09087654312</p>
-            <p>E-mail: it@blossomheart.onmicrosoft.com</p>
+            <p>E-mail: enquiries@blossomhearthospital.onmicrosoft.com</p>
           </div>
           <div className="footer-item">
             <h4>Company</h4>

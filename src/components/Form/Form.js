@@ -18,7 +18,6 @@ const Form = (props) => {
   const [gender, setGender] = useState("");
   const [reason, setReason] = useState("");
   const [sucess, showSucess] = useState(false);
-  const [un18, showUn18] = useState(false);
 
   //input changeHandlers
   const emailChangeHandler = (e) => {
@@ -72,13 +71,6 @@ const Form = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const ageDiff = Date.now() - new Date(dob).getTime();
-    const ageDate = new Date(ageDiff);
-    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
-    if (age < 18) {
-      showUn18(true);
-      return;
-    }
 
     const dep = reason.split("(");
     const dept = dep[1].split(")");
@@ -193,7 +185,7 @@ const Form = (props) => {
           </div>
 
           <div
-            className={un18 === true ? "single-input error" : "single-input"}
+            className="single-input"
           >
             <label>*Date of Birth</label>
             <input
@@ -203,7 +195,6 @@ const Form = (props) => {
               value={dob}
               onChange={dobChangeHandler}
             />
-            {un18 && <p>You must be over 18 to book an appointment</p>}
           </div>
 
           <div className="double-input">
