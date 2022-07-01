@@ -17,9 +17,9 @@ const Nav = (props) => {
 
   return (
     <Fragment>
-      <div className="nav">
+      <div className={props.darkmode === true ? "dark" : "nav"}>
         <div className="logo-div">
-          <button className="hamburger" onClick={showSidebarHandler}>
+          <button className={props.darkmode === true ? "dark-hamburger" : "hamburger"} onClick={showSidebarHandler}>
             <span></span>
             <span></span>
             <span></span>

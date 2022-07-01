@@ -62,7 +62,7 @@ const Home = (props) => {
             </button>
           </div>
 
-          <div className="card-container">
+          <div className={props.darkmode === true ? "dark-card-container" : "card-container"}>
             <div className="card">
               <img src={Medicine} alt="medicine-jar" />
               <h4>Pharmacy</h4>
