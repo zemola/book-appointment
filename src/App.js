@@ -17,9 +17,8 @@ function App() {
           <label class="switch">
             <input type="checkbox" className="switch-input"  onChange={darkChangeHandler}/>
             <span class="slider round"></span>
-           
           </label>
-          {darkmode === true ? <span className="span">dark</span> : <span className="span">light</span>}
+          <span className="span" style={{marginTop:"1rem"}}>Switch mode</span>
 
         </div>
         <Home darkmode ={darkmode}/>
